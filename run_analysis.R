@@ -1,11 +1,12 @@
 ##########################################################################################################
 
-## Coursera Getting and Cleaning Data Course Project
-## Sep 12, 2014
+# File Name :runAnalysis.r
+# Requirements : Coursera Getting and Cleaning Data Course Project.
+# Intial Date: Sep 12, 2014
 
-# runAnalysis.r File Description:
+# Project Requirements:
 
-# This script will perform the following steps on the UCI HAR Dataset downloaded from 
+# This R scripts will perform the below outlined steps on the UCI HAR Dataset downloaded from 
 # https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 # 1. Merge the training and the test sets to create one data set.
 # 2. Extract only the measurements on the mean and standard deviation for each measurement. 
@@ -112,3 +113,5 @@ tidyData    = merge(tidyData,activityType,by='activityId',all.x=TRUE);
 
 # Export the tidyData set, row.names=FALSE
 write.table(tidyData, './tidyData.txt',row.names=FALSE,sep='\t');
+
+# The R Scipt Creates tidyData.txt (180 observations of 21 Variables) in the UCI HAR Dataset directory with transformations per coded instructions in the script (merge,descriptive activity names, average of each variable for each activity & subject)

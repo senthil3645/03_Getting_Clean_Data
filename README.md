@@ -122,6 +122,8 @@ The run_analysis.R contains the R Code which reads and merges the training and t
 
 >Export the tidyData set, row.names=FALSE
 >write.table(tidyData, './tidyData.txt',row.names=FALSE,sep='\t');
+
+>The R Scipt Creates tidyData.txt (180 observations of 21 Variables) in the UCI HAR Dataset directory with transformations per coded instructions in the script (merge,descriptive activity names, average of each variable for each activity & subject)
 #####################################################################################
 
  
