@@ -24,11 +24,11 @@ rm(list=ls())
 setwd("~Big data/Coursera/Getting Clean Data/Project Assignment/UCI HAR Dataset");
 
 # Reading features,activity labels, subject train, X train, Y train  from files
-features     = read.table('./features.txt',header=FALSE); #imports features.txt
-activityType = read.table('./activity_labels.txt',header=FALSE); #imports activity_labels.txt
-subjectTrain = read.table('./train/subject_train.txt',header=FALSE); #imports subject_train.txt
-xTrain       = read.table('./train/x_train.txt',header=FALSE); #imports x_train.txt
-yTrain       = read.table('./train/y_train.txt',header=FALSE); #imports y_train.txt
+features     = read.table('./features.txt',header=FALSE); 
+activityType = read.table('./activity_labels.txt',header=FALSE); 
+subjectTrain = read.table('./train/subject_train.txt',header=FALSE); 
+xTrain       = read.table('./train/x_train.txt',header=FALSE); 
+yTrain       = read.table('./train/y_train.txt',header=FALSE); 
 
 # Assigning the column names to the data imported above
 colnames(activityType)  = c('activityId','activityType');
@@ -40,9 +40,9 @@ colnames(yTrain)        = "activityId";
 trainingData = cbind(yTrain,subjectTrain,xTrain);
 
 # Reading Subject, x test and y test from the supplied test data files
-subjectTest = read.table('./test/subject_test.txt',header=FALSE); #imports subject_test.txt
-xTest       = read.table('./test/x_test.txt',header=FALSE); #imports x_test.txt
-yTest       = read.table('./test/y_test.txt',header=FALSE); #imports y_test.txt
+subjectTest = read.table('./test/subject_test.txt',header=FALSE);
+xTest       = read.table('./test/x_test.txt',header=FALSE); 
+yTest       = read.table('./test/y_test.txt',header=FALSE);
 
 # Assigning the column names to the test data imported above -Similar to training data
 colnames(subjectTest) = "subjectId";
