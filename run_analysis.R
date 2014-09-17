@@ -80,7 +80,7 @@ colNames  = colnames(finalData);
 
 # 4. Appropriately labeling the data set with descriptive activity names. 
 
-# Cleaning up the variable names
+# Substituting the variable names with more descriptive ones using gsub function(Week 4 lecture)
 for (i in 1:length(colNames)) 
 {
   colNames[i] = gsub("\\()","",colNames[i])
