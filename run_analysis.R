@@ -1,6 +1,6 @@
 ##########################################################################################################
 
-# File Name :runAnalysis.r
+# File Name :run_analysis.R
 # Requirements : Coursera Getting and Cleaning Data Course Project.
 # Intial Date: Sep 12, 2014
 
